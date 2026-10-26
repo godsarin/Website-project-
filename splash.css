@@ -1,0 +1,150 @@
+/* New Loader Animation */
+.new-loader {
+    width: 60px; /* Size of the loader */
+    height: 60px; /* Size of the loader */
+    border-radius: 50%; /* Makes it circular */
+    background: linear-gradient(45deg, #6a1b9a, #ff6f61); /* Gradient colors */
+    animation: pulse 1.5s infinite ease-in-out; /* Animation */
+    margin: 30px auto; /* Center the loader */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8); /* Start smaller */
+        opacity: 0.7; /* Start slightly transparent */
+    }
+    50% {
+        transform: scale(1.2); /* Grow larger */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: scale(0.8); /* Return to smaller size */
+        opacity: 0.7; /* Return to slightly transparent */
+    }
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1b382;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Splash Container */
+.splash-container {
+    display: flex;
+    flex-direction: column; /* Stack image and text on small screens */
+    align-items: center;
+    background-color: #2d545e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px; /* Increased max-width */
+    width: 95%;
+    margin: 20px auto;
+}
+
+/* Image Section */
+.image-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Spacing between image and text */
+}
+
+.splash-image {
+    width: 100%; /* Responsive image width */
+    max-width: 400px; /* Maximum image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Text Content Section */
+.text-content {
+    width: 100%;
+    text-align: center;
+}
+
+.text-content h1 {
+    font-size: 2.5rem; /* Heading size */
+    color: #e1b382; /* Purple, a color often associated with gender equality */
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1rem; /* Paragraph font size */
+    line-height: 1.6; /* Line height */
+    color: #feb300;
+    margin-bottom: 20px;
+}
+
+/* Group Members Section */
+.group-members h2 {
+    font-size: 1.5rem; /* Subheading size */
+    color: #e1b382;
+    margin-bottom: 10px;
+}
+
+.group-members ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.group-members li {
+    font-size: 1rem; /* List item font size */
+    color:#feb300;
+    margin-bottom: 5px;
+}
+
+/* New Loader Animation */
+.new-loader {
+    width: 60px; /* Size of the loader */
+    height: 60px; /* Size of the loader */
+    border-radius: 50%; /* Makes it circular */
+    background: linear-gradient(45deg, #6a1b9a, #ff6f61); /* Gradient colors */
+    animation: pulse 1.5s infinite ease-in-out; /* Animation */
+    margin: 30px auto; /* Center the loader */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8); /* Start smaller */
+        opacity: 0.7; /* Start slightly transparent */
+    }
+    50% {
+        transform: scale(1.2); /* Grow larger */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: scale(0.8); /* Return to smaller size */
+        opacity: 0.7; /* Return to slightly transparent */
+    }
+}
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 768px) {
+    .splash-container {
+        flex-direction: row; /* Side-by-side layout on larger screens */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    .image-section {
+        width: 40%; /* Image takes 40% of the container */
+        margin-bottom: 0; /* Remove spacing between image and text */
+    }
+
+    .text-content {
+        width: 60%; /* Text takes 60% of the container */
+        padding-left: 30px; /* Spacing between image and text */
+        text-align: left; /* Align text to the left */
+    }
+}

@@ -1,0 +1,163 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #e5eaf5;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2d545e;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+/* Volunteer Programs Section */
+.volunteer-programs {
+  background-color: #e1b382;
+  padding: 60px 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  color: #12343b;
+}
+
+.filter-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #e1b382;
+}
+
+.program-card {
+  display: flex;
+  background-color: #e1b382;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.program-image {
+  background-color: #2d545e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-width: 100px;
+}
+
+.program-details {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.program-details h3 {
+  color: #2d545e;
+}
+
+.apply-btn {
+  background-color: #12343b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #ff5e6c;
+}
+
+/* Ratings and Reviews Section */
+.ratings-reviews {
+  background-color:#12343b;
+  padding: 60px 20px;
+}
+
+.overall-rating {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rating-number {
+  font-size: 3rem;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #ff5e6c;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.review-meta {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid  #feb300;
+}
+
+.see-more {
+  color: #c89666;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+}
+
+/* Feedback Form */
+.feedback-form {
+  background-color: #c89666;
+  padding: 60px 20px;
+  margin-bottom: -55px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color:  #12343b;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+  background-color: #2d545e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #12343b;
+}

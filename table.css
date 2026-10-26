@@ -1,0 +1,130 @@
+table {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+caption {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff3a21;
+    padding: 20px 0;
+    text-align: center;
+    caption-side: top;
+    letter-spacing: 0.5px;
+}
+
+thead {
+    background-color: #ff3a21;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+thead th:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ffd8e1;
+    transform: translateY(-2px);
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 1rem;
+    color: #333333;
+}
+
+tbody td:first-child {
+    font-weight: bold;
+    color: #c4123a;
+}
+
+tbody td:nth-child(2) {
+    font-weight: bold;
+}
+
+tbody td:nth-child(3),
+tbody td:nth-child(4) {
+    text-align: center;
+}
+
+tbody td:nth-child(3),
+tbody td:nth-child(4) {
+    position: relative;
+}
+
+tbody tr:nth-child(6) td:nth-child(3),
+tbody tr:nth-child(6) td:nth-child(4) {
+    color: #ff3a21;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(5) td:nth-child(3),
+tbody tr:nth-child(5) td:nth-child(4) {
+    color: #777;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 95%;
+        margin: 30px auto;
+        font-size: 0.9rem;
+    }
+
+    caption {
+        font-size: 1.4rem;
+        padding: 15px 0;
+    }
+
+    thead th, tbody td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    caption {
+        font-size: 1.2rem;
+    }
+
+    thead th, tbody td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}
